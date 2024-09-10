@@ -6,7 +6,7 @@ interface Props {
 
 export default function LayersDescription({ contents }: Props) {
     return (
-        <div className="flex flex-row gap-x-20 items-center justify-center mt-6">
+        <div className="flex flex-row gap-x-20 items-center justify-center mt-6 w-full">
             {
                 contents.map((item, index) => {
                     return (

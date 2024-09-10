@@ -1,14 +1,8 @@
 import type { Metadata } from "next";
-import { Urbanist } from "next/font/google";
 import '../styles/globals.css'
-import WebNav from "@/components/Navbar/WebNav";
+// import WebNav from "@/components/Navbar/WebNav";
 import { Suspense } from "react";
 import Footer from "@/components/Navbar/Footer";
-
-const urbanist = Urbanist({
-  subsets: ["latin"],
-  weight: ["400", "500", "800"],
-})
 
 export const metadata: Metadata = {
   title: "JawaraTech",
@@ -44,12 +38,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={urbanist.className}>
-        <WebNav />
+      <body>
+        {/* <WebNav /> */}
         <Suspense fallback={"Tunggu Sebentar..."}>
           {children}
         </Suspense>
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );
