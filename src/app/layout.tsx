@@ -5,8 +5,8 @@ import { Suspense } from "react";
 import Footer from "@/components/Navbar/Footer";
 
 export const metadata: Metadata = {
-  title: "JawaraTech",
-  description: "Generated your responsive and SEO friendly personal landing page with us!",
+  title: "Serumah Kost Sendiri",
+  description: "Hunian kost eksklusif dengan fasilitas yang lengkap untuk menunjang kehidupanmu serta memiliki beragam tipe kamar sesuai kebutuhan kamu!",
   icons: [
     {
       rel: 'apple-touch-icon',
