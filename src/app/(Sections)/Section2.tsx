@@ -21,11 +21,23 @@ export default function Section2() {
         {
             image: "/assets/icon/kulkas.svg",
             description: "Memiliki beragam fasilitas penunjang untuk penghuni"
+        },
+        {
+            image: "/assets/icon/shield.svg",
+            description: "Keamanan kost 24 jam dan smart door lock"
+        },
+        {
+            image: "/assets/icon/bus.svg",
+            description: "Menyediakan shuttle bus untuk penghuni"
+        },
+        {
+            image: "/assets/icon/gear.svg",
+            description: "Management kost yang terjamin"
         }
     ]
 
     return (
-        <div className="w-full bg-white p-8 py-16 flex flex-col gap-y-8">
+        <div className="w-full bg-[#ECEDEB] p-8 py-16 flex flex-col gap-y-8">
             <div className="mt-10 flex flex-col gap-y-16">
                 <div className="flex flex-col gap-y-3 w-full items-center">
                     <div className="font-bold text-[36px] text-center">
@@ -35,8 +47,9 @@ export default function Section2() {
                         SKS Living memiliki 6 keunggulan yang dapat menunjang kehidupan kamu
                     </p>
                 </div>
-                
-                <LayersDescription contents={contents} />
+                <div className="flex items-center justify-center w-full">
+                    <LayersDescription contents={contents} />
+                </div>
             </div>
         </div>
     )
