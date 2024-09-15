@@ -1,8 +1,8 @@
 import NextImage from "next/image";
 import hero_image from "@/assets/hero_image.svg";
-import logo from "@/assets/logo/sks.svg";
 import { getPlaceholderImage } from "@/utils/images";
 import Component from "@/components/Title/Section1Title";
+import NavLogoComponent from "@/components/NavLogo/LogoNav";
 
 const images = [
     "@/assets/hero_image.svg",
@@ -27,9 +27,7 @@ export default async function Section1() {
                 })
             }
             
-            <div className="absolute xl:py-10 bg-[#D6C233] xl:px-10 xl:pb-15 p-5 rounded-b-full top-0">
-                <NextImage width={100} height={100} className="xl:w-auto w-[60px]" src={logo} alt="logo_image"/>
-            </div>
+            <NavLogoComponent />
 
             <Component />
         </div>

@@ -22,7 +22,7 @@ export default function Component() {
             animate={{ opacity: 1, y: 0 }}
             transition={{
                 duration: 0.8,
-                delay: 1,
+                delay: 0.2,
                 ease: [0, 0.71, 0.2, 1.01]
             }}>
                 <div className="xl:text-[80px] lg:text-[80px] text-4xl text-center font-extrabold text-white tracking-wide">
@@ -35,7 +35,7 @@ export default function Component() {
                     serta memiliki beragam tipe kamar sesuai kebutuhan kamu</p>
                 </div>
                 <button className="text-[#443D0E] bg-[#D6C233] p-2 px-7 rounded-full animation duration-200 hover:opacity-80 xl:mt-15 mt-10">
-                    <p className="text-[16px] font-[600] tracking-wide">Buat Sekarang</p>
+                    <p className="text-[16px] font-[600] tracking-wide">Booking Sekarang</p>
                 </button>
         </motion.div>
     )
