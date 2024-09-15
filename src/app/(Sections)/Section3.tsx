@@ -1,4 +1,7 @@
+"use client";
+
 import ContentCarousel, { ProductContent } from "@/components/ContentCarousel/ContentCarousel";
+import { motion } from "framer-motion";
 
 const contentCarousel: ProductContent[] = [
     {
@@ -21,16 +24,36 @@ const contentCarousel: ProductContent[] = [
 export default function Section3() {
 
     return (
-        <div className="mt-6 flex flex-col gap-y-10 p-10 py-16 items-center">
+        <motion.section
+            variants={{
+                hidden: { opacity: 0, y: 100},
+                show: {
+                    opacity: 1,
+                    transition: {
+                        staggerChildren: 0.25,
+                        duration: 0.8,
+                        delay: 0.2,
+                        ease: [0, 0.71, 0.2, 1.01]            
+                    },
+                    y: 0,
+                }
+            }}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className="mt-6 flex flex-col gap-y-10 p-10 py-16 items-center justify-center"
+        >
             {
                 contentCarousel && contentCarousel.length > 0 ? 
                     contentCarousel.map((item, index) => {
                         return (
-                            <ContentCarousel key={index} content={item} />
+                            <motion.div key={index} variants={{ hidden: {opacity: 0}, show: {opacity: 1}}}>
+                                <ContentCarousel key={index} content={item} />
+                            </motion.div>
                         )
                     })
                 : null
             }
-        </div>
+        </motion.section>
     )
 }
