@@ -19,7 +19,7 @@ const railway = Raleway({
 export default function ContentSection4({ content }: { content: Content }) {
     return (
         <div className="bg-white w-full max-w-[1200px]">
-                <div className={`flex xl:${content.id % 2 === 0 ? "flex-row-reverse" : "flex-row "} flex-col w-full h-full items-center justify-between`}>
+                <div className={`flex ${content.id % 2 === 0 ? " xl:flex-row-reverse" : " xl:flex-row "} flex-col w-full h-full items-center justify-between`}>
                     <div className="w-full h-full flex items-center justify-center p-4">
                         <NextImage width={100} height={100} className="w-auto" src="/assets/images/img-4.svg" alt="asset_images" />
                     </div>
