@@ -26,6 +26,9 @@ export default function Footer() {
                 <p className={railway.className}>Jl. Serelek Jl. Carang Pulang No. 11 Cikarawang, Kec. <br />
                 Dramaga, Kab. Bogor</p>
             </div>
+            <div>
+                <p className="text-xs italic text-white">Copyright by: Jawara Landing Page</p>
+            </div>
         </div>
     )
 }
