@@ -12,9 +12,9 @@ export default function MainImage({ image }: { image: { src: string, placeholder
                 duration: 0.8,
                 ease: [0, 0.71, 0.2, 1.01]
             }}
-            className="-z-10 object-cover min-h-[720px] w-full"
+            className="-z-10 w-full"
         >
-            <NextImage width={100} height={100} key={image.src} placeholder="blur" blurDataURL={image.placeholder} className="w-full" src={image_hero} alt="hero_image"/>
+            <NextImage width={100} height={100} key={image.src} placeholder="blur" blurDataURL={image.placeholder} className="w-full object-cover min-h-[720px]" src={image_hero} alt="hero_image"/>
         </motion.div>
     )
 }
