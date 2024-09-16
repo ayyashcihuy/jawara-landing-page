@@ -41,7 +41,7 @@ export default function Section3() {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
-            className="mt-6 flex flex-col gap-y-10 p-10 py-16 items-center justify-center"
+            className="xl:mt-6 mt-0 flex flex-col gap-y-10 xl:p-10 xl:py-16 p-5 items-center justify-center"
         >
             {
                 contentCarousel && contentCarousel.length > 0 ? 

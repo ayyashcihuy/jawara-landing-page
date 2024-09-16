@@ -22,8 +22,8 @@ const railway = Raleway({
 export default function ContentCarousel({ content }: {content: ProductContent} ) {
     return (
         <div className="bg-white w-full max-w-[1200px]">
-            <div className="flex flex-row w-full h-full items-center justify-between">
-                <div className="w-full h-full flex flex-col gap-y-4 items-stretch justify-between px-10 py-4">
+            <div className="flex xl:flex-row flex-col-reverse w-full h-full items-center justify-between">
+                <div className="w-full h-full flex flex-col xl:gap-y-4 items-stretch justify-between xl:px-10 xl:py-4 p-6">
                     <div className="flex flex-col gap-y-10">
                         <div className="xl:text-[36px] text-xl">
                             <h1 className={della_respira.className}>

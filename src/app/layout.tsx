@@ -3,6 +3,7 @@ import '../styles/globals.css'
 // import WebNav from "@/components/Navbar/WebNav";
 import { Suspense } from "react";
 import Footer from "@/components/Navbar/Footer";
+import Loading from "@/components/Loading/Loading";
 
 export const metadata: Metadata = {
   title: "Serumah Kost Sendiri",
@@ -40,7 +41,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-[#ECEDEB]">
         {/* <WebNav /> */}
-        <Suspense fallback={"Tunggu Sebentar..."}>
+        <Suspense fallback={<Loading />}>
           {children}
         </Suspense>
         <Footer />
