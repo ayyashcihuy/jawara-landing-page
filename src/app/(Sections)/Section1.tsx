@@ -16,7 +16,7 @@ export default async function Section1() {
       )
 
     return (
-        <div className="w-full h-auto bg-[#77412DB2]/70 flex flex-col items-center justify-center gap-y-4 relative">
+        <div className="w-full h-auto bg-[#903936]/70 flex flex-col items-center justify-center gap-y-4 relative">
             {
                 imageWithPlaceholder.map((image) => {
                     return (
