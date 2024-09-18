@@ -33,7 +33,7 @@ export default function ContentSection4({ content }: { content: Content }) {
                             <div className="flex flex-col gap-y-6">
                                 <p className={railway.className}>{content.description}</p>
                             </div>
-                            <div className="flex flex-wrap text-[#593121] gap-x-4 gap-y-4">
+                            <div className="flex flex-wrap text-[#903936] gap-x-4 gap-y-4">
                                 {
                                     content && content.feature.length > 0 ?
                                     content.feature.map((item, index) => {

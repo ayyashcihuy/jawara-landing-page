@@ -15,7 +15,7 @@ const railway = Raleway({
 
 export default function Footer() {
     return (
-        <div className="w-screen py-4 flex flex-col items-center justify-center gap-y-4 min-h-[300px] bg-[#593121]">
+        <div className="w-screen py-4 flex flex-col items-center justify-center gap-y-4 min-h-[300px] bg-[#903936]">
             <div className="flex flex-row items-center justify-center text-white xl:text-4xl text-2xl gap-x-4">
                 <NextImage width={100} height={100} src="/assets/icon/logo.svg" alt="icon_only" className="w-auto xl:max-w-[100px] max-w-[40px]" />
                 <p className={spirax.className}>
