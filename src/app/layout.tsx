@@ -4,6 +4,7 @@ import '../styles/globals.css'
 import { Suspense } from "react";
 import Footer from "@/components/Navbar/Footer";
 import Loading from "@/components/Loading/Loading";
+import { Toaster } from "@/components/ui/sonner"
 
 export const metadata: Metadata = {
   title: "Serumah Kost Sendiri",
@@ -29,6 +30,7 @@ export default function RootLayout({
           {children}
         </Suspense>
         <Footer />
+        <Toaster />
       </body>
     </html>
   );

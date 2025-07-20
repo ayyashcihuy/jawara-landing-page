@@ -46,7 +46,7 @@ const content: Content[] = [
 
 export default function Section4() {
     return (
-        <div className="mt-6 flex flex-col gap-y-10 p-10 py-16 items-center w-full min-h-screen bg-white">
+        <div className="mt-6 flex flex-col gap-y-10 p-10 py-16 items-center w-full bg-white">
             {
                 content && content.length > 0 ? 
                 content.map((item, index) => {
