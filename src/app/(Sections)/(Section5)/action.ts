@@ -1,6 +1,7 @@
 import { BACKEND_URL } from "@/app/global";
 import { z } from "zod";
 
+
 export const FormRequestSchema = z.object({
     email: z.email().min(2, {
         message: "email must be at least 2 characters.",
@@ -10,7 +11,7 @@ export const FormRequestSchema = z.object({
     }),
     message: z.string().min(2, {
         message: "message must be at least 2 characters.",
-    }),
+    })
 });
 
 export const submitForm = async (data: z.infer<typeof FormRequestSchema>) => {
