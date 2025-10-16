@@ -34,62 +34,64 @@ export default function Section5() {
 
     return (
         <div className="flex flex-col gap-y-6 p-10 px-16 items-center w-full bg-white text-[#903936]">
-            <div className="flex flex-col gap-y-4 w-full">
-                <h1 className="text-4xl font-bold text-left">
-                    Punya Pertanyaan?
-                </h1>
-                <p className="text-left text-xl">
-                    Hubungi kami 
-                </p>
-            </div>
-            <div className="flex flex-col gap-y-4 w-full">
-                 <Form {...form}>
-                    <form onSubmit={form.handleSubmit(onSubmit)} className="w-full flex flex-col gap-y-4">
-                        <div className="w-full flex flex-row gap-x-4">
+            <div className="w-full max-w-[1150px]">
+                <div className="flex flex-col gap-y-4 w-full">
+                    <h1 className="text-4xl font-bold text-left">
+                        Punya Pertanyaan?
+                    </h1>
+                    <p className="text-left text-xl">
+                        Hubungi kami 
+                    </p>
+                </div>
+                <div className="flex flex-col gap-y-4 w-full mt-2">
+                    <Form {...form}>
+                        <form onSubmit={form.handleSubmit(onSubmit)} className="w-full flex flex-col gap-y-4">
+                            <div className="w-full flex flex-row gap-x-4">
+                                <FormField
+                                    control={form.control}
+                                    name="email"
+                                    render={({ field }) => (
+                                        <FormItem>
+                                            <FormControl>
+                                                <Input placeholder="Email" {...field} />
+                                            </FormControl>
+                                            <FormMessage />
+                                        </FormItem>
+                                    )}
+                                />
+                                <FormField
+                                    control={form.control}
+                                    name="name"
+                                    render={({ field }) => (
+                                        <FormItem>
+                                            <FormControl>
+                                                <Input placeholder="Name" {...field} />
+                                            </FormControl>
+                                            <FormMessage />
+                                        </FormItem>
+                                    )}
+                                />
+                            </div>
                             <FormField
                                 control={form.control}
-                                name="email"
+                                name="message"
                                 render={({ field }) => (
                                     <FormItem>
                                         <FormControl>
-                                            <Input placeholder="Email" {...field} />
+                                            <Textarea
+                                                placeholder="Please tell us your message here"
+                                                className="resize-none"
+                                                {...field}
+                                            />
                                         </FormControl>
                                         <FormMessage />
                                     </FormItem>
                                 )}
                             />
-                            <FormField
-                                control={form.control}
-                                name="name"
-                                render={({ field }) => (
-                                    <FormItem>
-                                        <FormControl>
-                                            <Input placeholder="Name" {...field} />
-                                        </FormControl>
-                                        <FormMessage />
-                                    </FormItem>
-                                )}
-                            />
-                        </div>
-                        <FormField
-                            control={form.control}
-                            name="message"
-                            render={({ field }) => (
-                                <FormItem>
-                                    <FormControl>
-                                        <Textarea
-                                            placeholder="Please tell us your message here"
-                                            className="resize-none"
-                                            {...field}
-                                        />
-                                    </FormControl>
-                                    <FormMessage />
-                                </FormItem>
-                            )}
-                        />
-                        <Button type="submit" className="w-fit bg-[#903936] text-white">Kirim</Button>
-                    </form>
-                </Form>
+                            <Button type="submit" className="w-fit bg-[#903936] text-white">Kirim</Button>
+                        </form>
+                    </Form>
+                </div>
             </div>
         </div>
     )
